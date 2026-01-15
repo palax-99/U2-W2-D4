@@ -1,0 +1,34 @@
+@import "./functions";
+@import "./variables";
+@import "./mixins";
+$h7-font-size: $font-size-base * 1;
+$h8-font-size: $font-size-base * 0.75;
+$h9-font-size: $font-size-base * 0.5;
+$h10-font-size: $font-size-base * 0.25;
+
+$new-font-sizes: (
+  7: $h7-font-size,
+  8: $h8-font-size,
+  10: $h10-font-size,
+  9: $h9-font-size,
+);
+
+$font-sizes: map-merge($font-sizes, $new-font-sizes);
+footer {
+  button {
+    font-size: $h10-font-size;
+  }
+}
+
+$new-border-width: (
+  6: 6px,
+  7: 7px,
+  8: 8px,
+  9: 9px,
+  10: 10px,
+);
+$border-widths: map-merge($border-widths, $new-border-width);
+$input-btn-padding-y: 2.5rem;
+$input-btn-padding-x: 0.75rem;
+
+@import "./bootstrap.scss";
