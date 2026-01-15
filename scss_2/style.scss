@@ -28,7 +28,9 @@ $new-border-width: (
   10: 10px,
 );
 $border-widths: map-merge($border-widths, $new-border-width);
-$input-btn-padding-y: 2.5rem;
-$input-btn-padding-x: 0.75rem;
 
-@import "./bootstrap.scss";
+$btn-padding-x: 2.5rem;
+$btn-padding-y: 0.75rem;
+
+$grid-gutter-width: 0.5rem;
+$card-color: @import "./bootstrap.scss";
